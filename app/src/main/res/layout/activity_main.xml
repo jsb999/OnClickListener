@@ -6,47 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="196dp"
         android:checked="false"
+        android:onClick="onClick"
         android:text="ToggleButton"
         android:textOff="0"
         android:textOn="1"
-        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:text="ToggleButton"
-        android:textOff="0"
-        android:textOn="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton4" />
 
     <ToggleButton
         android:id="@+id/toggleButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onClick"
         android:text="ToggleButton"
         android:textOff="0"
         android:textOn="1"
@@ -57,8 +37,9 @@
         android:id="@+id/toggleButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onClick"
         android:text="ToggleButton"
         android:textOff="0"
         android:textOn="1"
@@ -69,12 +50,26 @@
         android:id="@+id/toggleButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
         android:text="ToggleButton"
         android:textOff="0"
         android:textOn="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
